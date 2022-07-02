@@ -19,6 +19,7 @@ interface Config {
   };
   FIREBASE_COLLECTION_NAME: string;
   WEB_URL: string;
+  CORS_ORIGIN: string;
 }
 
 const CONFIG: Config = {
@@ -37,7 +38,8 @@ const CONFIG: Config = {
     databaseURL: process.env.FIREBASE_DATABASE_URL || "",
   },
   FIREBASE_COLLECTION_NAME: process.env.FIREBASE_COLLECTION_NAME || "storage",
-  WEB_URL: process.env.WEB_URL || "r.chnwt.dev",
+  WEB_URL: process.env.WEB_URL || "example.com",
+  CORS_ORIGIN: process.env.CORS_ORIGIN || "*",
 };
 
 const MSG = {

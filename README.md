@@ -120,5 +120,8 @@ FIREBASE_DATABASE_URL='' (Required)
 FIREBASE_COLLECTION_NAME='' (Default: 'storage')
 
 # Website URL
-WEB_URL='' (Default: 'r.chnwt.dev')
+WEB_URL='' (Default: 'example.com')
+
+# CORS
+CORS_ORIGIN='' (Default: '*') # Access-Control-Allow-Origin
 ```

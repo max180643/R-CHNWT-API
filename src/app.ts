@@ -13,7 +13,10 @@ const buildApp = (options: FastifyServerOptions) => {
   const app = fastify(options);
 
   app.register(fastifyCors, {
-    origin: "*",
+    origin: CONFIG.CORS_ORIGIN,
+    methods: ["GET", "POST"],
+    credentials: true,
+    maxAge: 1800,
   });
 
   app.register(fastifyRateLimit, {
